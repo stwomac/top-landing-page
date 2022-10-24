@@ -1,0 +1,73 @@
+/*Flex arrangement*/
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    
+  }
+
+.header, .footer{
+  width: 100%;
+}
+  
+.header{
+  display: flex;
+  justify-content: space-around;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  gap: 5%;
+  width: 25%;
+  margin:0;
+  padding: 0;
+  margin-right: -10%;
+}
+
+
+
+/*colors and fonts*/
+
+.header,.contentOne {
+  background-color: #1F2937;
+}
+
+h1 {
+  color: #F9FAF8;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.contentOne > div > p, li {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+div.header > div{
+  font-size: 24px;
+  color: #F9FAF8;
+}
+
+button, .contentFour {
+  background-color: #3882F6;
+}
+
+h2{
+  font-size: 36px;
+  font-weight: extra-bold;
+  color: #1F2937;
+}
+
+.contentThree{
+  background-color: #E5E7EB;
+}
+
+.contentThree blockquote {
+  font-size: 36px;
+  font-style: light-italic;
+  color: #1F2937;
+}
