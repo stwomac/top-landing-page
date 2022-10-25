@@ -1,73 +1,128 @@
 /*Flex arrangement*/
+
+/*fix header by using link padding instead of width*/
 body {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-    font-family: sans-serif;
-    
-  }
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width:100vw;
+  margin:0;
+  font-family: 'Ubuntu Mono', Arial, sans-serif;
+  
+}
 
 .header, .footer{
-  width: 100%;
+width: 100%;
 }
-  
+
+/*header flex arrangement*/
 .header{
-  display: flex;
-  justify-content: space-around;
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding:.3%;
+  flex-shrink:0;
 }
 
 ul{
+display: flex;
+list-style: none;
+gap: 5%;
+width: 50%;
+margin:0;
+padding: 0;
+margin-right: -10%;
+}
+
+div.header > div:first-child{
+  margin-right: 16%;
+  margin-left: 11%;
+}
+
+.contentOne{
   display: flex;
-  list-style: none;
-  gap: 5%;
-  width: 25%;
-  margin:0;
-  padding: 0;
-  margin-right: -10%;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+   
+}
+
+.contentTwo{
+  height: 35vh;
+}
+
+.contentThree{
+  height: 33vh;
+}
+
+.contentFour{
+  height: 30vh;
+}
+
+.contentOne > div{
+  
+  height: 60%;
+  width:25%;
+}
+.hero{
+background-color: grey;
+}
+
+.hero div {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+ 
 }
 
 
 
 /*colors and fonts*/
 
-.header,.contentOne {
-  background-color: #1F2937;
+.header,.contentOne, .footer {
+background-color: #1F2937;
 }
 
 h1 {
-  color: #F9FAF8;
-  font-size: 48px;
-  font-weight: 800;
+color: #F9FAF8;
+font-size: 32px;
+/*! font-weight: 800; */
 }
 
-.contentOne > div > p, li {
-  font-size: 18px;
-  color: #E5E7EB;
+.contentOne > div > p, li, .footer {
+font-size: 18px;
+color: #E5E7EB;
 }
 
 div.header > div{
-  font-size: 24px;
-  color: #F9FAF8;
+font-size: 24px;
+color: #F9FAF8;
 }
 
 button, .contentFour {
-  background-color: #3882F6;
+background-color: #3882F6;
 }
 
 h2{
-  font-size: 36px;
-  font-weight: extra-bold;
-  color: #1F2937;
+font-size: 36px;
+font-weight: extra-bold;
+color: #1F2937;
 }
 
 .contentThree{
-  background-color: #E5E7EB;
+background-color: #E5E7EB;
 }
 
 .contentThree blockquote {
-  font-size: 36px;
-  font-style: light-italic;
-  color: #1F2937;
+font-size: 36px;
+font-style: italic;
+font-weight: 100;
+color: #1F2937;
+}
+
+.hero {
+  color: #F9FAF8;
 }
